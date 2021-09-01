@@ -12,13 +12,24 @@ const placeholders = [
 
 const emptyForm = document.getElementById('formContainer')
 
-const makeForm = (label, placeholder) =>{
+function validateField (event){
+    let fieldValue = event.value
+    let image = event.parentNode.children[2].children[0]
+    if (fieldValue === ''){
+        image.classList.remove("unhide");
+    }else{
+        image.classList.add("unhide");
+    }
+}
+
+const makeForm = (label, id, placeholder) =>{
     const formFieldTemplate =
         `<div class="input-container">
         <label for="input${label}">${label}</label>
-        <input id="inputName" type="text" placeholder="${placeholder}">
+        <input id="input${id}" onfocusout="validateField(this)" type="text" placeholder="${placeholder}">
+        
         <div class="checkmark-container">
-            <img class="checkmark" src="img/check-mark.svg" alt="checkmark">
+        <img class="checkmark" id="img${id}" src="img/check-mark.svg" alt="checkmark">
         </div>
     </div>`
     
@@ -27,7 +38,9 @@ const makeForm = (label, placeholder) =>{
    
 }
 
-makeForm('First Name', 'Juan')
-makeForm('Last Name', 'Pérez')
-makeForm('Address', 'Your Address')
+
+
+makeForm('First Name', 'FirstName', 'John')
+makeForm('Last Name', 'LastName', 'Doe')
+makeForm('Address', 'Address', '')
 

@@ -1,0 +1,530 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button samples</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	<style>
+
+		body {
+			background-color: #D1DEEE;
+			font-family: 'Roboto', sans-serif;
+		}
+
+		.buttons-list {
+			margin: 4rem auto;
+			width: 100%;
+			max-width: 500px;
+		}
+		.buttons-list li {
+			padding: 4rem;
+			width: 348px;
+		}
+
+
+		.button {
+			width: 100%;
+			height: 60px;
+			color: rgb(255, 255, 255);
+			font-weight: 500;
+			font-size: 24px;
+			font-family: inherit;
+			letter-spacing: 0.5px;
+			background-color: rgb(255, 138, 40);
+			border: 1px solid transparent;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 01  */
+		.cta-01 {
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #E06500;
+			text-shadow: 0 2px 2px #E06500;
+			box-shadow: 
+				8px 8px 0 #E06500,
+				inset 0 1px 1px #FFD2AD;
+			transition: all 50ms ease;
+		}
+		.cta-01:hover {
+			transform: translate( -4px, -4px );
+			box-shadow: 
+				16px 16px 0 #E06500, 
+				inset 0 1px 1px #FFD2AD;
+			transition: all 100ms ease;
+		}
+		.cta-01:active {
+			background-image: none;
+			transform: translate( 4px, 4px );
+			box-shadow: 
+				0 0 0 #E06500, 
+				inset 0 0 8px #E06500;
+			transition: all 50ms ease;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 02  */
+		.cta-02 {
+			border-radius: 30px;
+			position:  relative;
+			padding-right: 24px;
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #E06500;
+			text-shadow: 0 2px 2px #E06500;
+			box-shadow: 
+				inset 0 1px 1px #FFD2AD, 
+				0 0 4px rgba(0, 0, 0, 0.25), 
+				0 2px 4px rgba(0, 0, 0, 0.25);
+			transition: all 100ms ease;
+		}
+		.cta-02:after {
+			content: "";
+			background-image: url('https://cdn.getblueshift.com/pictures/92908/content/circle-arrow.png');
+			background-size: contain;
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			top: 14px;
+			right: 24px;
+		}
+		.cta-02:hover {
+			transform: translateY(-4px);
+			box-shadow: 
+				inset 0 1px 1px #FFD2AD, 
+				0 0 8px rgba(0, 0, 0, 0.05), 
+				0 4px 8px rgba(0, 0, 0, 0.25);
+			transition: all 50ms ease;
+		}
+		.cta-02:active {
+			transform: translateY(0);
+			background-image: linear-gradient( #FF780A, #FFA55C);
+			box-shadow: 
+				inset 0 0 8px #E06500, 
+				0 1px 2px #FFFFFF;
+			transition: all 50ms ease;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 03  */
+		.cta-03 {
+			border-radius: 30px;
+			position: relative;
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #E06500;
+			box-shadow: 
+				inset 0 1px 1px #FFD2AD, 
+				0 0 4px rgba(0, 0, 0, 0.15), 
+				0 2px 4px rgba(0, 0, 0, 0.25);
+			text-shadow: 0 2px 2px #E06500;
+			transition: all 100ms ease;
+		}
+		.cta-03:before {
+			content: "";
+			position: absolute;
+			top: -16px;
+			bottom: -16px;
+			right: -16px;
+			left: -16px;
+			z-index: -1;
+			border-radius: 46px;
+			background-image: linear-gradient( rgba(52,96,157,0.1), rgba(255,255,255,0.4) );
+			box-shadow: 
+				0 -1px 1px rgba(52,96,157,0.4), 
+				0 1px 2px rgba(255,255, 255, 1);
+		}
+		.cta-03:active {
+			background-image: linear-gradient( #FF780A, #FFA55C);
+			box-shadow: 
+				inset 0 0 8px #E06500, 
+				0 1px 2px #FFFFFF;
+			transition: all 50ms ease;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 04  */
+		.cta-04 {
+			border-radius: 34px;
+			background-color: #FFFFFF;
+			background-image: linear-gradient( #FFFFFF, #FFD2AD );
+			color: #E06500;
+			text-shadow: 0 2px 2px #FFFFFF;
+			border: 4px solid #FF780A;
+			box-shadow: 
+				0 0 4px rgba(0, 0, 0, 0.25), 
+				0 2px 4px rgba(0, 0, 0, 0.25);
+			transition: all 100ms ease;
+		}
+		.cta-04:active {
+			transform: translateY(2px);
+			text-shadow: 0 2px 2px #E06500;
+			color:  #FFFFFF;
+			background-color: #FF8A28;
+			background-image: none;
+			transition: all 50ms ease;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 05  */
+		.cta-05 {
+			background-image: linear-gradient(
+				to bottom, 
+				#FFA55C, 
+				#FF8A28 50%, 
+				#FF780A 51%, 
+				#FF8A28
+			);
+			border: 1px solid #E06500;
+			box-shadow: 
+				inset 0 1px rgba(255, 255, 255, 0.4), 
+				0 1px 2px 0 rgba(0, 0, 0, 0.50),
+				0 0 4px 0 rgba(0, 0, 0, 0.25);
+			text-shadow: 0 2px 2px #E06500;
+			position: relative;
+			overflow: hidden;
+			transition: all 100ms ease;
+		}
+		.cta-05:before {
+			content: '';
+			position: absolute;
+			top: -25%;
+			bottom: -25%;
+			left: -20%;
+			right: -20%;
+			border-radius: 50%;
+			background: transparent;
+			box-shadow: inset 0 0 38px rgba(255, 255, 255, 0.5);
+		}
+		.cta-05:after {
+			content: '';
+			position: absolute;
+			height: 240px;
+			width: 40px;
+			background: white;
+			top: -80px;
+			left: -120px;
+			display: block;
+			opacity: 0.125;
+			box-shadow: 0px 0px 20px 10px #FFFFFF; 
+			transform: rotate(-45deg);
+			transition: all 400ms ease;
+		}
+		.cta-05:hover:after {
+			left: calc(100% + 80px);
+		}
+		.cta-05:active {
+			transform: translateY(2px);
+			box-shadow: 
+				inset 0 0 8px #E06500,
+				0 1px 2px #FFFFFF;
+			background-image: none;
+			transition: all 50ms ease;
+		}
+
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 06  */
+		.cta-06 {
+			background-color: #FF780A;
+			text-shadow: 0 2px 2px #E06500;
+			border: 1px solid #E06500;
+			position: relative;
+			padding-right: 60px;
+			box-shadow: 
+				0 0 4px rgba(0, 0, 0, 0.25), 
+				0 2px 2px rgba(0, 0, 0, 0.25);
+			transition: all 75ms ease;
+		}
+		.cta-06:after {
+			content: "";
+			background-image: url('https://cdn.getblueshift.com/pictures/92692/content/arrow.png');
+			background-size: 32px 32px;
+			background-position: center;
+			background-repeat: no-repeat;
+			width: 60px;
+			height: 58px;
+			background-color: #E06500;
+			position: absolute;
+			top: 0;
+			right: 0;
+			transition: all 50ms ease;
+		}
+		.cta-06:active {
+			transform: translateY(2px);
+		}
+		.cta-06:active:after {
+			background-size: 48px 48px;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 07  */
+		.cta-07 {
+			border-radius: 30px;
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #FF8A28;
+			border-top:  1px solid #FFA55C;
+			border-bottom:  1px solid #E06500;
+			text-shadow: 0 2px 2px #E06500;
+			position: relative;
+			box-shadow: 
+				0 8px 20px 0 rgba(52,96,157,0.50),
+				inset 0 -4px 8px #E06500,
+				inset 0 8px 4px #FFBE85;
+			transition: all 50ms ease;
+		}
+		.cta-07:before {
+			content: "";
+			display: block;
+			height: 4px;
+			position: absolute;
+			top: 4px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: calc(100% - 60px);
+			background: #FFD2AD;
+			border-radius: 100%;
+			opacity: 0.5;
+		}
+		.cta-07:hover {
+			transform: scale(1.05);
+			transition: all 100ms ease;
+		}
+		.cta-07:active {
+			transform: scale(0.95);
+			background-image: none;
+			border:  1px solid #E06500;
+			box-shadow: 
+				0 0 8px 0 rgba(52,96,157,0.50),
+				inset 0 -2px 8px #E06500,
+				inset 0 4px 4px #FFBE85;
+			transition: all 50ms ease;
+		}
+		.cta-07:active:before {
+			opacity: 0;
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 08  */
+		.cta-08 {
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #E06500;
+			text-shadow: 0 2px 2px #E06500;
+			position: relative;
+			box-shadow: 
+				inset 0 1px 1px #FFD2AD, 
+				0 0 4px rgba(0, 0, 0, 0.25), 
+				0 2px 4px rgba(0, 0, 0, 0.25);
+			transition: all 100ms ease;
+		}
+		.cta-08:before {
+			content: "";
+			background-image: url('https://cdn.getblueshift.com/pictures/92888/content/down-arrow.png');
+			background-size: contain;
+			width: 32px;
+			height: 32px;
+			position: absolute;
+			top:  -40px;
+			left: 50%;
+			margin-left: -16px;
+			animation: arrow 1.75s ease infinite;
+		}
+		.cta-08:hover {
+			transform: translateY(-4px);
+			transition: all 50ms ease;
+		}
+		.cta-08:active {
+			transform: translateY(2px);
+			background-image: linear-gradient( #FF780A, #FFA55C);
+			box-shadow: 
+				inset 0 0 8px #E06500, 
+				0 1px 2px #FFFFFF;
+		}
+		.cta-08:active:before {
+			display: none;
+		}
+		@keyframes arrow {
+			0% {
+				transform: translateY(-8px);
+				opacity: 0;
+			}
+  			70% {
+  				transform: translateY(0);
+  				opacity: 1;
+			}
+			90% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 09  */
+		.cta-09 {
+			border-radius: 30px;
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #E06500;
+			text-shadow: 
+				0 2px 2px #E06500;
+			box-shadow: 
+				inset 0 1px rgba(255, 255, 255, 0.4),
+				0 0 0 0 rgba(255,120,10, 0.5);
+			animation: pulse 1.75s infinite both;
+			animation-delay: 1s;
+		}
+		.cta-09:hover {
+			animation-iteration-count: 1;
+			animation: pulseonce 1.75s both;
+		}
+		.cta-09:active {
+			animation: both;
+			background-image: linear-gradient( #FF780A, #FFA55C );
+			transform: scale(0.95);
+		}
+		@keyframes pulse {
+			0% {
+				transform: scale(0.95);
+			}
+  			70% {
+				transform: scale(1);
+				box-shadow: 
+					inset 0 1px rgba(255, 255, 255, 0.4),
+					0 0 4px 16px rgba(255,120,10, 0);
+			}
+			100% {
+				transform: scale(0.95);
+				box-shadow: 
+					inset 0 1px rgba(255, 255, 255, 0.4), 
+					0 0 0 0 rgba(255,120,10, 0);
+			}
+		}
+		@keyframes pulseonce {
+			0% {
+				transform: scale(1);
+			}
+			70% {
+				transform: scale(1);
+				box-shadow: 
+					inset 0 1px rgba(255, 255, 255, 0.4),
+					0 0 4px 16px rgba(255,120,10, 0);
+			}
+  			100% {
+				box-shadow: 
+					inset 0 1px rgba(255, 255, 255, 0.4),
+					0 0 4px 16px rgba(255,120,10, 0);
+			}
+		}
+
+
+
+
+		/* ---------------------------------------------------------------- */
+		/* Button 10  */
+		.cta-10 {
+			background-image: linear-gradient( #FFA55C, #FF780A );
+			border:  1px solid #E06500;
+			border-bottom:1px solid #FF8A28;
+			text-shadow: 0 2px 2px #E06500;
+			box-shadow: inset 0 1px 1px #FFD2AD;
+			position: relative;
+		}
+		.cta-10:before {
+			border-radius: 4px;
+			display: block;
+			content:"";
+			position: absolute;
+			left:0;
+			right:0;
+			z-index:-1;
+			top:8px;
+			height:60px;
+			background: #E06500;
+			box-shadow:
+				0 4px 4px rgba(25,47,77,.25),
+				0 16px 8px rgba(25,47,77,.2);
+		}
+		.cta-10:active {
+			top: 8px;
+		}
+		.cta-10:active:before {
+			 top:0;
+			 box-shadow: 
+			 	0 3px 3px rgba(25,47,77,.25),
+			 	0 3px 9px rgba(25,47,77,.2);
+		}
+
+
+	</style>
+</head>
+<body>
+
+<ol class="buttons-list">
+	<li>
+		<button class="button cta-01" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-02" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-03" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-04" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-05" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-06" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-07" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-08" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-09" type="submit">Check My Score</button>
+	</li>
+	<li>
+		<button class="button cta-10" type="submit">Check My Score</button>
+	</li>
+
+</ol>
+
+
+
+	
+</body>
+</html>

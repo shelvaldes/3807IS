@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Orange" transform="translate(-1144.000000, -530.000000)">
+            <g id="Orange-02---Hover" transform="translate(880.000000, 516.000000)">
+                <g id="Icon" transform="translate(264.000000, 14.000000)">
+                    <circle id="Oval" fill="#E06500" cx="16" cy="16" r="16"></circle>
+                    <g id="angle-right-solid" transform="translate(11.000000, 8.000000)" fill="#FFFFFF">
+                        <path d="M9.62980769,8.8447205 L3.09134615,15.6024845 C2.63942308,16.0695652 1.90865385,16.0695652 1.46153846,15.6024845 L0.375,14.4795031 C-0.0769230769,14.0124224 -0.0769230769,13.2571429 0.375,12.7950311 L5.00961538,8.00496894 L0.375,3.21490683 C-0.0769230769,2.74782609 -0.0769230769,1.99254658 0.375,1.53043478 L1.45673077,0.397515528 C1.90865385,-0.0695652174 2.63942308,-0.0695652174 3.08653846,0.397515528 L9.625,7.1552795 C10.0817308,7.62236025 10.0817308,8.37763975 9.62980769,8.8447205 L9.62980769,8.8447205 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
