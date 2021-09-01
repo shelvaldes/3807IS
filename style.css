@@ -34,7 +34,7 @@ label{
     font-size: 0.626rem;
     line-height: 1rem;
     color: #999999;
-   
+    pointer-events:none;
 }
 input{
     padding: 28px 16px 12px;
@@ -43,6 +43,16 @@ input{
     width: 100%;
     border: 1px solid #D6D6D6;
   border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+/*input:last-child {
+    margin-bottom: 0;
+}*/
+
+button{
+    width: 100%;
+    padding: 16px;
 }
 
 .checkmark-container{
@@ -51,6 +61,7 @@ input{
     position: absolute;
     align-self: center;
     width: 100%;
+    pointer-events:none;
 }
 
 .checkmark{
