@@ -121,13 +121,11 @@ button:active {
 .checkmark{
     opacity: 0;
     transform: rotate(-20deg) scale(0.4);
-    animation: grow 300ms; 
+     
     
 }
 
-@keyframes grow {
-    
-}
+
 
 .unhide{
     opacity: 1;
