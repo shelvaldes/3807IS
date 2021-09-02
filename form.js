@@ -15,10 +15,14 @@ const emptyForm = document.getElementById('formContainer')
 function validateField (event){
     let fieldValue = event.value
     let image = event.parentNode.children[2].children[0]
+    let formField = event.parentNode.children[1]
+    console.log(formField)
     if (fieldValue === ''){
         image.classList.remove("unhide");
+        formField.classList.remove("validated")
     }else{
         image.classList.add("unhide");
+        formField.classList.add("validated")
     }
 }
 
