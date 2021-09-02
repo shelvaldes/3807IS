@@ -1,15 +1,3 @@
-const labels = [
-    'First Name',
-    'Last Name',
-    'Address'
-]
-
-const placeholders = [
-    'John',
-    'Doe',
-    'Your Address'
-]
-
 const emptyForm = document.getElementById('formContainer')
 
 function validateField (event){
@@ -18,11 +6,11 @@ function validateField (event){
     let formField = event.parentNode.children[1]
     console.log(formField)
     if (fieldValue === ''){
-        image.classList.remove("unhide");
-        formField.classList.remove("validated")
+        image.classList.remove("formfield__checkmark--unhide");
+        formField.classList.remove("formfield__box--validated")
     }else{
-        image.classList.add("unhide");
-        formField.classList.add("validated")
+        image.classList.add("formfield__checkmark--unhide");
+        formField.classList.add("formfield__box--validated")
     }
 }
 
