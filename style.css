@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+:root {
+    --error: #D0021B;
+}
+
 body {
     font-family: 'Roboto', 'sans-serif';
+    background-color: #F9FBFD;
     color: #999999;
 }
 
@@ -14,6 +19,13 @@ main {
     flex-direction: column;
     align-items: center;
     height: 100vh;
+}
+
+h5 {
+    color: #06405A;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    margin-bottom: 16px;
 }
 
 .container {
@@ -27,7 +39,9 @@ main {
 .input-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     width: 100%;
+    
 }
 
 label {
@@ -36,31 +50,30 @@ label {
     padding: 8px 16px;
     font-size: 0.626rem;
     line-height: 1rem;
-    color: #999999;
+    /* color: #999999; */
+    ;
     pointer-events: none;
 }
 
 input {
     padding: 28px 16px 12px;
-    display: absolute;
     font-size: 1rem;
     width: 100%;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #D1DEEE;
     border-radius: 4px;
     margin-bottom: 16px;
-
 }
 
 /* Victor sarabia button 2 Styles */
 button {
+    display: block;
     width: 100%;
     padding: 16px;
-    border: 1px solid #E06500;
     color: #FFFFFF;
     font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.67px;
-
+    border: 1px solid #E06500;
     border-radius: 30px;
     position: relative;
     padding-right: 24px;
@@ -87,17 +100,18 @@ button:after {
 
 button:hover {
     transform: translateY(-4px);
-    box-shadow: 
-        inset 0 1px 1px #FFD2AD, 
-        0 0 8px rgba(0, 0, 0, 0.05), 
+    box-shadow:
+        inset 0 1px 1px #FFD2AD,
+        0 0 8px rgba(0, 0, 0, 0.05),
         0 4px 8px rgba(0, 0, 0, 0.25);
     transition: all 50ms ease;
 }
+
 button:active {
     transform: translateY(0);
-    background-image: linear-gradient( #FF780A, #FFA55C);
-    box-shadow: 
-        inset 0 0 8px #E06500, 
+    background-image: linear-gradient(#FF780A, #FFA55C);
+    box-shadow:
+        inset 0 0 8px #E06500,
         0 1px 2px #FFFFFF;
     transition: all 50ms ease;
 }
@@ -110,47 +124,68 @@ button:active {
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    align-self: center;
     pointer-events: none;
     /* border: #eb9046 solid 1px; */
     width: 100%;
     padding: 16px;
-    margin-top: -8px;
+    margin-top: 4px;
 }
 
-.checkmark{
+.checkmark {
     opacity: 0;
     transform: rotate(-20deg) scale(0.4);
-     
-    
 }
 
 
 /*Unhide is a class that aplies to the checkmark. It should do the bounce once triggered*/
-.formfield__checkmark--unhide{
+.formfield__checkmark--unhide {
     opacity: 1;
-    transform: rotate(0deg) scale(1); 
+    transform: rotate(0deg) scale(1);
     transition: all 300ms cubic-bezier(0.25, 1, 0.5, 1);
     animation: bounce 300ms 1;
 }
 
-/*Validated aplies to the form field itself.*/
-.formfield__box--validated{
+/*Validation aplies to the form field itself.*/
+.formfield__box--validated {
     border: 1px solid #35D475;
-    background-color: #DDF8E8; 
+    background-color: #DDF8E8;
 }
+
+.formfield__box--error {
+    border: 1px solid var(--error);
+}
+
 /*The bounce makes the ckeckmark a little bigger before end on it's final size. It makes the transition more natural*/
-@keyframes bounce{
-    0%{
+@keyframes bounce {
+    0% {
         opacity: 1;
         transform: scale(0);
 
     }
-    80%{
+
+    80% {
         transform: scale(1.2)
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 
 }
+
+/* Appplies to parent div */
+.form__error--hidden {
+    display: none;
+}
+
+.form__error--unhide {
+    background-image: url('img/exclamation-triangle.svg');
+    background-repeat: no-repeat;
+    background-position-y: center;
+    margin: -16px 0px 8px;
+    padding: 8px 0px 8px 16px;
+    font-size: 0.75rem;
+    color: var(--error);
+    display: block;
+}
+
